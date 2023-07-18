@@ -1,0 +1,153 @@
+.first-content{
+    display: flex;
+    margin:10px;
+    justify-content: space-around;
+    
+}
+.text-div{
+    width: 50%;
+    margin-top:30px;
+}
+.text-div > p{
+    width: 400px;
+    padding:10px;
+    line-height: 25px;
+}
+.text-div > h2{
+    text-transform: capitalize;
+    width: 400px;
+    color:#4A8CBB;
+    padding: 10px;
+}
+.text-div > button{
+    padding:10px;
+    width: 130px;
+    background-color: #4A8CBB;
+    line-height: 20px;
+    margin-left: 13px;
+}
+@media only screen and (max-width:425px){
+    .text-div{
+     position: relative;
+     top:5%;
+    display: flex;
+    flex-direction: column;
+     width: 425px;
+     
+     padding: 40px;
+     }
+    .first-content{
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction:column
+    }
+    .text-div > h2 {
+    
+        max-width: 300px;
+        margin-bottom:50px;
+        padding:10px;
+        margin-left:auto;
+        margin-right: auto;
+        
+    
+    }
+    .text-div > p{
+        color:black;
+        max-width:320px;
+        padding: 10px;
+        text-align: justify;
+        font-size: 16px;
+        margin-left: 300px;
+        margin-right: 200px;
+       
+        
+        
+        
+    
+    }
+    .text-div > button {
+    text-align: center;
+    margin-left: 130px;
+
+    
+    }
+    .first-content > .img-div{
+        position: absolute;
+        top:100%; 
+        max-width:100%;
+ 
+
+    }
+    
+    .img-div > img{
+    
+        max-width:300px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+ 
+@media only screen and (max-width:375px){
+    .text-div{
+     display:flex;
+     flex-direction: column;
+     position: relative;
+     top:5%;
+     flex-wrap: nowrap;
+     align-items: center;
+     
+     min-width:320px;
+     
+
+     
+    }
+    .first-content{
+        position: relative;
+        min-height: 100%;
+        top:70px;
+        min-width: 375px;
+        margin-top:-20px;
+
+    }
+    .text-div > h2 {
+        text-align: center;
+        max-width: 260px;
+    
+    }
+    .text-div > p{
+        color:black;
+        max-width:280px;
+        margin:0 30px 0 -30px;
+        text-align: justify;
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .text-div > button {
+    text-align: center;
+    margin-left: 130px;
+
+    
+    }
+    .first-content > .img-div{
+        position: absolute;
+        width:100%;
+        top:100%; 
+        margin:0 20px 0 -30px;
+        
+ 
+
+    }
+    
+    .img-div > img{
+    
+        max-width:90%;
+        
+    }
+}

@@ -1,0 +1,130 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    background: #00828c;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    color:white;
+    
+}
+.navbar{
+    display: flex;
+    
+    margin:5px 10px;
+
+}
+.main-header > img{
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top:6px;
+}
+.link{
+    text-decoration: none;
+    text-transform: capitalize;
+    margin:0px 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color:white;
+
+}
+.btn{
+    background-color: #4A8CBB;
+    width: 120px;
+}
+.navbar > .Link{
+    margin:10px;
+    padding: 5px;
+    display: flex;
+    gap:20px;
+    text-transform: capitalize;
+}
+.staff-image{
+    display: flex;
+    margin-top:10px;
+
+}
+.img1{
+    width: 90%;
+    margin:0 auto;
+}
+Link{
+    cursor: pointer;
+}
+
+Link > :hover{
+    background-color:#4A8CBB;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
+    width:75%;
+}
+@media only screen and (max-width:425px){
+.header-logo{
+    display: flex;
+    position:absolute;
+    top:15px;
+    left:20px;
+}
+.main-header{
+    min-width: 425px;
+    padding:5px;
+    background: #00828c;
+    display: flex;
+    max-height: 300px;
+    
+}
+
+.nav-link{
+    display: none;
+
+}
+ .link{
+    color:white;
+    text-align: center;
+    width:100%;
+    transition:all 0.5s ease;
+}
+
+.nav-link-mobile{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #005469;
+    left:0;
+    top:75px;
+    transition: all 0.5s ease-out;
+    min-height: 300px;
+    width: 100%;
+}
+.mobile-menu-icon{
+ display:block;
+ position:absolute;
+ background-color: #00828c;
+ color:white;
+ left:250px;
+ right: 250px;
+ width:100px;
+}
+
+.btn{
+    margin-left:170px;
+}
+.staff-image{
+    display: flex;
+    position: relative;
+    margin-top:320px;
+    width: 100%;
+    height: 100%;
+}
+.staff-image > img{
+    width: 90%;
+    height: 180px;
+}
+}

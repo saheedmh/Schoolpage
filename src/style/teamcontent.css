@@ -1,0 +1,23 @@
+.team-group{
+    width:100%;
+    box-sizing: border-box
+    
+}
+.team-group > h1{
+   text-transform: uppercase; 
+   margin-top:30px;
+    text-align:center;
+    color:#4A8CBB;
+    font-size:22px;
+    padding:5px;
+}
+.team-group > #groupss{
+    margin-bottom:70px;
+    
+    height: 400px;
+    margin-top:20px;
+
+}
+#card{
+
+}

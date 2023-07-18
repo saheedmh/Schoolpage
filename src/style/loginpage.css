@@ -1,0 +1,150 @@
+.login-container{
+    background-color: #F4DDDD;
+    height:100%;
+    margin-top:0px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+   
+}
+.login-form{
+    background-color: #ffff;
+    width: 28%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top:40px;
+    text-align: center;
+}
+.login-form > h2{
+    font-weight: 600px;
+    font-size:25px;
+    margin-top:40px;
+    text-transform: capitalize;
+    margin-top:60px;
+    margin-left: 10px;
+    
+    line-height:100px;
+
+    
+}
+.login-form > :nth-child(2){
+    margin-right: 170px;
+    font-size:16px;
+    color:gray;
+    text-transform: capitalize;
+
+}
+.login-form > input[type="text"]{
+    padding:5px;
+    border-radius: 5px;
+     outline: none;
+    border: 1px solid gray;
+    width:200px;
+}
+.login-form > :nth-child(4){
+    margin-right: 146px;
+    margin-top:10px;
+    color:gray;
+    text-transform: capitalize;
+}
+.login-form > input[type="password"]{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid gray;
+    width:200px;
+    
+}
+.login-form > input[type="checkbox"]{  
+    margin-right: 90px;
+    margin-bottom:20px;
+    margin-top:20px;
+
+}
+
+.login-form > :nth-child(7){
+    display: flex;
+    margin-left: 59px;
+    justify-content: space-between;
+    font-size:12px;
+
+    
+}
+section{
+    margin-top:20px;
+    width: 100%;
+    margin-bottom:20px;
+    
+}
+section > input[type="checkbox"]{
+    margin-left: 40px;
+    width:30px;
+}
+section > :nth-child(2){
+    margin-right: 90px;
+    width: 160px;
+    margin-left: 0px;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+    
+}
+section > a{
+    margin-right: 80px;
+    width: 190px;
+   color:red;
+   text-transform: capitalize;
+    text-decoration: none;
+    margin-left:-80px;
+}
+.login-form > .btn-id{
+    width:60%;
+    padding:5px;
+    
+    color:white;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    
+    
+}
+span{
+    position: relative;
+    top:30px;
+    font-size: 14px;
+}
+span::before{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid black;
+    bottom:90px;
+    width: 70px;
+    left: -75px;
+    top:10px;
+    right: 120px;
+}
+ 
+  
+span::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid black;
+    bottom:10px;
+    width: 70px;
+    left: 50px;
+    top:12px;
+}
+#btn-id{
+    background-color:  #4A8CBB;
+    color:black;
+    border:1px solid black;
+    border-radius:5px;    
+}
+p{
+    font-size: 14px;
+    padding: 5px;
+}
+.link{
+    text-decoration: none;
+    margin-left: 3px;
+}
