@@ -5,11 +5,11 @@
     
 }
 .text-div{
-    width: 50%;
+    width: max-content;
     margin-top:30px;
 }
 .text-div > p{
-    width: 400px;
+    min-width: fit-content;
     padding:10px;
     line-height: 25px;
 }
@@ -20,11 +20,20 @@
     padding: 10px;
 }
 .text-div > button{
-    padding:10px;
-    width: 130px;
+    padding:10px 30px;
+    font-weight: 500;
     background-color: #4A8CBB;
     line-height: 20px;
+    color: inherit;
+    text-transform: capitalize;
+    font-size: 20px;
     margin-left: 13px;
+    border:none;
+    border-radius: 5px 0 5px;
+}
+.text-div > button:hover{
+background-color: #00828c ;
+color:#fff;
 }
 @media only screen and (max-width:425px){
     .text-div{
@@ -45,24 +54,20 @@
     }
     .text-div > h2 {
     
-        max-width: 300px;
-        margin-bottom:50px;
+        
+        
         padding:10px;
-        margin-left:auto;
-        margin-right: auto;
+        margin-inline:auto;
         
     
     }
     .text-div > p{
         color:black;
-        max-width:320px;
+        max-width:max-content;
         padding: 10px;
         text-align: justify;
         font-size: 16px;
-        margin-left: 300px;
-        margin-right: 200px;
-       
-        
+        margin-inline:auto;
         
         
     
@@ -98,8 +103,8 @@
      top:5%;
      flex-wrap: nowrap;
      align-items: center;
+     width: 100%;
      
-     min-width:320px;
      
 
      
@@ -108,7 +113,7 @@
         position: relative;
         min-height: 100%;
         top:70px;
-        min-width: 375px;
+        max-width: 375px;
         margin-top:-20px;
 
     }
@@ -119,8 +124,8 @@
     }
     .text-div > p{
         color:black;
-        max-width:280px;
-        margin:0 30px 0 -30px;
+        max-width:max-content;
+        margin-inline:auto;
         text-align: justify;
         
         display: flex;
@@ -147,7 +152,7 @@
     
     .img-div > img{
     
-        max-width:90%;
+        margin-left: 50px;
         
     }
 }

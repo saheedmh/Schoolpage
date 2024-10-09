@@ -190,7 +190,7 @@ color:#4A8CBB;
         display:flex;
         flex-direction:column;
          
-         width:425px;
+         max-width:425px;
          margin-top:180px;
 
     }
@@ -198,7 +198,7 @@ color:#4A8CBB;
         margin-left: auto;
         margin-right:auto;
         font-size:18px;
-        width:300px;
+        max-width:300px;
     }
     .firstprogram-content > img{
         margin-top:20px;

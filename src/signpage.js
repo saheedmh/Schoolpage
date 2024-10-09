@@ -1,11 +1,35 @@
 import './style/loginpage.css';
 import './style/signup.css';
 import {Link} from 'react-router-dom';
-import React from 'react';
-function Signuppage(){
+import React, {Component } from 'react';
+import axios from 'axious'
+
+
+export default class Signuppage extends Component {
+  handleSubmit = (e)  => {
+    e.preventDefault()
+  const data ={
+    first_name: this.firstName,
+    last_name :this.lastname,
+    email : this.email,
+    password:this.password,
+    confirm_password:this.confirmpassword
+    
+      } ;
+      //axios.post('https://localhost:3200/post' +data).then(
+        //res =>{
+         // console.log(res.data)
+        //}
+      //).catch(
+       // err => {
+         // console.log(err)
+        //}
+      //)
+    
+      };
   
-  
-    return ( 
+    render(){
+      return ( 
       
     
       <div className="signup-container">
@@ -36,7 +60,7 @@ function Signuppage(){
 
         
      );
+      }
 
 }
  
-export default Signuppage ;
