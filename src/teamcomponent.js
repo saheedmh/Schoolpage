@@ -1,5 +1,5 @@
 
-
+import './style/card.css'
 import './style/teamcontent.css';
 const Teamcomponent = () => {
     return ( 

@@ -4,7 +4,7 @@ footer{
     align-items: center;
     
     
-    max-height: 100vh;
+    height: 100vh;
   
     position: relative;
 }
@@ -46,103 +46,16 @@ footer > .social-icon{
     justify-content: space-around;
     width: 400px;
 }
-@media only screen and (max-width : 375px){
-    .footer{
-        margin-top:100px;
-        margin-left:-50px;
-        display: flex;
-        margin-bottom:50px;
-        flex-direction: column;
-        margin-right:50px;
-    
-    }
-    .footer-text{
-      
-      max-width:320px;
-      margin-left:50px;
-    }
-    .footer-text > h1{
-        max-width:320px;
-        text-align: center;
-        margin-left:20px;
-        font-size: 16px;
-
-    }
-    .footer-text > p{
-        max-width:300px;
-        text-align: center;
-        margin-left:20px;
-        font-size: 14px;
-
-    }
-    .social-icon{
-        
-        margin-left:20px;
-        display: flex;
-        
-    }
-    .icon{
-       margin:0 -50px 0 -60px; 
-       cursor: pointer;
-    }
-}
-
-@media only screen and (max-width : 320px){
-    .footer{
-        margin-top:100px;
-        margin-left:-50px;
-        display: flex;
-        margin-bottom:50px;
-        flex-direction: column;
-        margin-right:50px;
-        max-width: 300px;
-    
-    }
-    .footer-text{
-        max-width:300px;
-    
-      
-      max-width:375px;
-      margin-left:50px;
-    }
-    .footer-text > h1{
-        max-width:375px;
-        text-align: center;
-        margin-left:10px;
-        font-size: 14px;
-        max-width:270px;
-
-    }
-    .footer-text > p{
-        max-width:290px;
-        text-align: center;
-        margin-left:10px;
-        font-size: 12px;
-
-    }
-    .social-icon{
-        width:200px;
-        
-        margin-left:80px;
-        display: flex;
-        max-width: 240px;
-        
-    }
-    .icon{
-       margin:0 -50px 0 -60px; 
-       cursor: pointer;
-    }
-}
 
 @media only screen and (max-width : 780px){
     .footer{
-        margin-top:100px;
+        
         margin-left:0px;
         display: flex;
         margin-bottom:50px;
         flex-direction: column;
         margin-right:30px;
-        flex-basis: 100%;
+         height: 100vh;
     
     }
     .footer-text{
@@ -153,11 +66,11 @@ footer > .social-icon{
       margin-left:50px;
     }
     .footer-text > h1{
-        max-width:375px;
+        
         text-align: center;
-        margin-left:10px;
-        font-size: 14px;
-        max-width:270px;
+        max-width: fit-content;
+        font-size: 18px;
+        
 
     }
     .footer-text > p{

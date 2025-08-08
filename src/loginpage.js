@@ -10,17 +10,20 @@ const  Loginpage = () => {
         
          <form action="" className="login-form">
             <h2>hi, welcome back</h2>
-            <label>Email</label>
-            <input type="text" />
-            <label>password</label>
-            <input type="password" name="" id="" /><br></br>
+            <label htmlFor='email'>Email</label>
+            <input type="text" id='email'/>
+            <br/>
+            
+            <label htmlFor='password'>password</label>
+            <input type="password" name="" id="password" /><br></br>
+            <button >login</button><br/>
             <section>         
-            <input type="checkbox"  name="" id="" value='remember me' /> <labe>Remember me</labe> 
-            <br></br>
+            <input type="checkbox"  name="" id="" value='remember me' /> <labe id="checkbox-id">Remember me</labe> 
+            <br/>
             <Link>forget password</Link>
             </section>
    
-            <button >login</button><br></br>
+            
           <span>or With</span><br /><br /><br />
 
           <button  >login with facebook</button><br></br><br />

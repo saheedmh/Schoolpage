@@ -5,7 +5,7 @@
     
 }
 .text-div{
-    width: max-content;
+    max-width: fit-content;
     margin-top:30px;
 }
 .text-div > p{
@@ -35,13 +35,12 @@
 background-color: #00828c ;
 color:#fff;
 }
-@media only screen and (max-width:425px){
+@media (max-width:768px){
     .text-div{
      position: relative;
      top:5%;
-    display: flex;
-    flex-direction: column;
-     width: 425px;
+
+     min-width: 100vw;
      
      padding: 40px;
      }
@@ -63,96 +62,36 @@ color:#fff;
     }
     .text-div > p{
         color:black;
-        max-width:max-content;
+        max-width:50vw ;
         padding: 10px;
         text-align: justify;
         font-size: 16px;
-        margin-inline:auto;
+       
         
         
     
     }
     .text-div > button {
-    text-align: center;
+    max-width: fit-content;
     margin-left: 130px;
+    color: #ffff;
 
     
     }
     .first-content > .img-div{
-        position: absolute;
-        top:100%; 
-        max-width:100%;
- 
+      
+        
 
     }
     
     .img-div > img{
-    
-        max-width:300px;
+     width: 400px;
+       height: 300px;
+        
+        
         margin-left: auto;
         margin-right: auto;
         
     }
 }
  
-@media only screen and (max-width:375px){
-    .text-div{
-     display:flex;
-     flex-direction: column;
-     position: relative;
-     top:5%;
-     flex-wrap: nowrap;
-     align-items: center;
-     width: 100%;
-     
-     
-
-     
-    }
-    .first-content{
-        position: relative;
-        min-height: 100%;
-        top:70px;
-        max-width: 375px;
-        margin-top:-20px;
-
-    }
-    .text-div > h2 {
-        text-align: center;
-        max-width: 260px;
-    
-    }
-    .text-div > p{
-        color:black;
-        max-width:max-content;
-        margin-inline:auto;
-        text-align: justify;
-        
-        display: flex;
-        flex-wrap: wrap;
-        
-        
-        
-    }
-    .text-div > button {
-    text-align: center;
-    margin-left: 130px;
-
-    
-    }
-    .first-content > .img-div{
-        position: absolute;
-        width:100%;
-        top:100%; 
-        margin:0 20px 0 -30px;
-        
- 
-
-    }
-    
-    .img-div > img{
-    
-        margin-left: 50px;
-        
-    }
-}

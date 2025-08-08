@@ -2,11 +2,13 @@
     background-color: #4A50BB;
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 20px;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     outline:none;
+    top:60px;
+    bottom:0px;
     border:none;
     
 
@@ -31,7 +33,7 @@
     background-color: #E1E9F6;
     bottom:80px;
     border-top-left-radius: 50px;
-    width: 400px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,11 +46,11 @@
     margin-top:50px;
     width:400px;
 }
-.side-row > h1{
+.side-contact-div > h1{
     color:white;
     text-transform: capitalize;
 }
-.side-row >p{
+.side-contact-div > p{
     color:#fff;
     width: 300px;
     padding:10px;
@@ -114,71 +116,34 @@ input:focus + label{
 transform: translateY(-18px);
 color:#ff652f
 }
-@media only screen and (max-width:375px){
-.contact-div{
-    
-    margin-top:800px;
-    max-width: 320px;
-}
-.side-row{
-    
-    margin-right: 100px;
-}
-.side-row > h1{
-    font-size: 12px;
-    margin-right: 70px;
-    margin-left: -60px;
-}
-.side-row > p{
-    color:black;
-    margin-right: 45px;
-    width: 100px;
-    margin-left:-10px;
-    text-align: justify;
-}
-.contact-form{
-    max-width: 200px;
-    margin-left:45px;
-}
-textarea{
-    max-width: 180px;
-    
-}
-}
 
-@media only screen and (max-width:780px){
+@media only screen and (max-width:765px) {
     .contact-div{
-        margin-left:20px;
-        margin-top:400px;
-        width:100%;
-    }
-    .contact-form > button{
-    margin-right:30px;
-    width:100px;
-    margin-left:20px;
-    }
-    .side-row{
         
-        margin-right: 100px;
+       
+        
+       
+        
     }
-    .side-row > h1{
-        font-size: 12px;
-        margin-right: 70px;
-        margin-left: -60px;
-    }
-    .side-row > p{
-        color:white;
-        margin-right: 45px;
-        width: 100px;
-        margin-left:-10px;
-        text-align: justify;
+    
+    .contact-div{
+        
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        
     }
     .contact-form{
-        max-width: 200px;
-        margin-left:75px;
+        margin-top: 240px;
     }
-    textarea{
-        max-width: 180px;
+    textarea::placeholder{
+       margin-left: 30px;
         
     }
+    .side-contact-div{
+ text-align: center;
+ margin: auto;
     }
+    }
+    
+    

@@ -1,23 +1,36 @@
 .firstprogram-content{
-    display: flex;
-    justify-content: space-around;
-    
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+   
+   align-items: center;
+   gap:10px;
+   margin-top:30px;
+   margin-left:auto;
+   margin-right: auto;
+   margin-bottom: 30px;
 }
-.firstprogram-content h1{
-    max-width:300px;
+.firstprogram-content > img{
+    width:500px;
+    height: 300px;
+}
+.program-heading-one{
+    
     padding:10px;
     margin-top:40px;
-    font-size:40px;
+    font-size:24px;
     text-align: center;
     text-transform: uppercase;
 
+}
+.heading_content{
+    padding: 0 20px 0 20px;
 }
 .prgrm-second-col{
     display: flex;
     justify-content: space-between;
     margin-top:20px;
 }
-.prgrm-second-col > .para{
+  .para{
     max-width: 500px;
     line-height: 24px;
     padding: 10px;
@@ -36,6 +49,10 @@
     margin-right: 300px;
     border-radius: 4px;
     text-transform: uppercase;
+}
+button{
+    border: none;
+    color:#ffff;
 }
 .seconds-cols{
     display: flex;
@@ -185,34 +202,32 @@ color:#4A8CBB;
     border-bottom:2px solid gray;
 
 }
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:765px) {
     .firstprogram-content{
         display:flex;
         flex-direction:column;
          
-         max-width:425px;
-         margin-top:180px;
+         
+         
 
     }
-    .firstprogram-content > h1{
+    .program-heading-one{
         margin-left: auto;
         margin-right:auto;
-        font-size:18px;
-        max-width:300px;
+        
+        
     }
     .firstprogram-content > img{
         margin-top:20px;
-        max-width:280px;
+        
         margin-left:auto;
         margin-right:auto;
     }
     .prgrm-second-col{
-        width: 425px;
-        display: flex;
         
-        min-height: 560px;
-       flex-direction: column;
-       align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
        
     }
     .para{
@@ -252,6 +267,11 @@ color:#4A8CBB;
         margin-left: auto;
         margin-right:auto;
        }
+       #btnsid{
+      min-width: fit-content;
+      color:rgb(209, 202, 202);
+      border:none;
+       }
        .checkbox-div{
         width:80%;
         margin-left: auto ;
@@ -260,10 +280,16 @@ color:#4A8CBB;
         padding:10px;
 
        }
+       .seconds-cols{
+        margin:auto;
+       }
        .third-cols{
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: column;
-        width: 100%;
+
+        
        }
        .third-col-text{
         
@@ -279,23 +305,33 @@ color:#4A8CBB;
        .fourth-row{
         display: flex;
         flex-direction: column;
-        width: 425px;
+       
         align-items: center;
        }
        .fourth-text{
-        width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: fit-content;
+       }
+       .fourth-text > h4{
+        
+        
+        padding: 10px;
+        text-align: center;
        }
        .fourth-text > p{
         margin-left:auto;
         margin-right:auto;
-        width:300px;
-        font-size: 16px;
         padding:10px;
-        line-height: 30px;
-        background-color: white;
+        
+        
+       }
+       #btnids{
+        border: none;
+        color:#ffff
        }
        .images-divs{
-        width:425px;
+        max-width:425px;
 
        }
        .image-divs > img{
@@ -348,164 +384,3 @@ color:#4A8CBB;
 }
 
 
-@media only screen and (max-width:375px) {
-    .firstprogram-content{
-        display:flex;
-        flex-direction:column;
-         
-         width:375px;
-         margin-top:180px;
-
-    }
-    .firstprogram-content > h1{
-        margin-left: auto;
-        margin-right:auto;
-        font-size:18px;
-        width:300px;
-    }
-    .firstprogram-content > img{
-        margin-top:20px;
-        max-width:280px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .prgrm-second-col{
-        width: 375px;
-        display: flex;
-        
-        min-height: 560px;
-       flex-direction: column;
-       align-items: center;
-       
-    }
-    .para{
-        display:flex;
-
-        width: 16rem;
-        margin-top:10px;
-        grid-gap:5px;
-        align-items:center;
-        margin-right: 40px;
-    }
-    .para > P{
-       
-        width: 300px;
-        display: flex;
-        font-size: 18px;
-        align-items: center;
-        background-color: white;
-       }
-       .prgrm-second-col > button{
-        margin-bottom:120px;
-        margin-left:auto;
-        margin-top:-20px;
-        margin-right:auto;
-       }
-       .seconds-cols{
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-        
-       }
-       .first-row{
-        width:350px;
-       }
-       .first-row > p{
-        max-width: 320px;
-        margin-left: auto;
-        margin-right:auto;
-       }
-       .checkbox-div{
-        width:355px;
-        margin-left: auto ;
-        line-height: 20px;
-        margin-right:auto;
-        padding:10px;
-
-       }
-       .third-cols{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       }
-       .third-col-text{
-        
-        width: 300px;
-        margin : 0 0 0 50px;
-       }
-       .third-cols .image{
-        width: 375px;
-       }
-       .third-cols .image > img{
-        width: 300px;
-       }
-       .fourth-row{
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-        align-items: center;
-       }
-       .fourth-text{
-        width: 375px;
-       }
-       .fourth-text > p{
-        margin-left:auto;
-        margin-right:auto;
-        width:300px;
-        font-size: 16px;
-        padding:10px;
-        line-height: 30px;
-        background-color: white;
-       }
-       .images-divs{
-        width:375px;
-
-       }
-       .image-divs > img{
-        width:340px;
-        margin-left:20px;
-        margin-right:auto;
-       }
-       #btnsid{
-        padding:10px 20px 10px 20px;
-        font-size:16px;
-        
-       }
-       .fifth-row {
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-       } 
-       .rows-text{
-        display: flex;
-        flex-direction: column;
-        width:375px;
-        
-        align-items: center;
-        
-       }
-       .rows-text > h3{
-        width: 300px;
-       }
-       .rows-text > p{
-        font-size:16px;
-        padding:10px;
-        min-width:300px;
-        margin-left:auto;
-        margin-right:auto;
-        
-       }
-       .rows-image {
-        width: 375px;
-
-       }
-       .rows-image > img{
-        width: 360px;
-        margin-left:auto;
-        margin-right:90px;
-       }
-       .rows-text > :nth-child(2){
-        line-height: 25px;
-        width: 330px;
-       }   
-}

@@ -2,7 +2,7 @@ import './style/contact.css'
 const Contactus = () => {
     return ( 
         <div className="contact-div">
-       <div className='side-row'>
+       <div className='side-contact-div'>
         <h1>contact us</h1>
         <p>We’re always happy to welcome people like you to our HYF community. Drop us a line and become part of it!</p>
         </div>
@@ -10,12 +10,12 @@ const Contactus = () => {
             <label id='user'
              htmlFor="full name">full name</label>
              
-             <input type="text" />
+             <input type="text" placeholder='Enter your Name' />
              <label htmlFor="" id='email'>email</label>
              
-             <input type="text" />
+             <input placeholder='Enter your email' type="text" />
              
-             <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+             <textarea name="" id="" cols="30" rows="10" placeholder="Send your message"></textarea>
             <button type='button'>send</button>
             </form>
         </div>

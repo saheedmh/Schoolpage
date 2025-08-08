@@ -2,7 +2,7 @@ import './style/forthcomponent.css'
 const Fourthcomponent = () => {
     return ( 
         <div className="main-div">
-        <div className="header">
+        <div className="heading">
         <h1>our core values</h1></div>
             <div className="firs-row">
             <div className="cols">
