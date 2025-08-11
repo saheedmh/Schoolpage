@@ -44,7 +44,7 @@
 }
 .contact-div > :nth-child(1){
     margin-top:50px;
-    width:400px;
+    max-width:400px;
 }
 .side-contact-div > h1{
     color:white;
@@ -117,7 +117,7 @@ transform: translateY(-18px);
 color:#ff652f
 }
 
-@media only screen and (max-width:765px) {
+@media only screen and (min-width:320px) and (max-width:765px) {
     .contact-div{
         
        
@@ -135,8 +135,9 @@ color:#ff652f
     }
     .contact-form{
         margin-top: 240px;
+        max-width: 320px;
     }
-    textarea::placeholder{
+    textarea::[placeholder]::{
        margin-left: 30px;
         
     }

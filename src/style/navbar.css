@@ -64,7 +64,8 @@
   flex-direction: column;
   background-color: #0d1117;
   padding: 1rem 0;
-  width: 100%;
+  width: 40%;
+  margin-left: 0;
 }
 
 /* Responsive behavior */
@@ -80,6 +81,7 @@
   .nav-mobile .link {
     border-bottom: 1px solid #1f75fe;
     text-align: center;
+    margin-left: 40px;
   }
 
   .btn {

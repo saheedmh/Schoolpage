@@ -1,114 +1,71 @@
-.main-div{
-    width:100%;
-  height: 100%;
-    
-}
+
 .firs-row{
     display: flex;
-    justify-content: space-around;
+    width: 100%;
     
 }
-.heading{
 
-  
-  
-}
 .main-div{
     margin:10px;
+    margin-top:30px;
 }
-.heading > h1{
+.fourth-component-container{
+  margin-top:40px;
+}
+.heading-content-container > h1{
 text-align: center;
 color:#4A8CBB;
 text-transform: capitalize;
 font-size: 25px;
 }
 .cols{
-    width:45%;
+    
     padding:10px;
-    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
 }
 .cols > img{
-    width:50px;
-}
-.cols  >:nth-child(2){
-    color:#4A8CBB;
-    font-weight: 700px;
-    font-size: 20px;
-}
-.secon-row{
-    display:flex;
-    justify-content: space-around;
+    display: block;
+    
+    
+
+    
 }
 
 
   
-@media screen and (max-width:765px){
-    .main-div{
-      min-width:80%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      
-      margin-top:100px;
-      
+@media only screen and (min-width:320px) and (max-width:765px){
     
-  }
   
   .heading > h1{
   margin-left: auto;
   margin-right: auto;
    margin-bottom:10px;
    margin-top:0px;
-
+   
+}
   
   
-  }
-  .cols{
-    
-     min-width: 80%;
-    height: 100%;
-    position: relative;
-    top:0;
-    left:50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    
-
-  }
   .cols > p{
     font-size: 18px;
     padding:5px;
-    max-width:300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .cols :nth-child(even){
-    text-align: center;
-    margin-top:5px;
-
-  }
-  .cols :nth-child(3){
-    text-align: center;
-    margin-top:5px;
-    
-  }
-  .firs-row{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-      
-  }
-  .secon-row{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    
     }
+  
+  
+  .firs-row{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  .cols{
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
   }
   
  

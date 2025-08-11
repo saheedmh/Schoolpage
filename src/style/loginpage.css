@@ -3,23 +3,28 @@
     height:100%;
     width: 100%;
     margin-top:0px;
-    display: grid;
-    place-items: center;
-    justify-content: space-between;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+    
     
    
 }
 .login-form{
     background-color: #ffff;
-    width: 50%;
-    display: grid;
-    place-items: center;
-    
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top:40px;
-    
+    align-items: center;
     margin-bottom: 40px;
     border-radius: 30px;
+    flex-wrap: wrap;
+
 }
 .login-form > h2{
     font-weight: 600px;
@@ -46,7 +51,7 @@
     border-radius: 0;
     outline: none;
     border: 1px solid gray;
-    width: 80%;
+    flex-basis: auto;
     border: none;
     border-bottom: 1px solid gray;
     display: block;
@@ -163,4 +168,9 @@ p{
 .link{
     text-decoration: none;
     margin-left: 3px;
+}
+@media only screen and (min-width:320px) and (max-width:760px){
+   .login-form{
+    max-width: 70%;
+   } 
 }

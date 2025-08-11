@@ -65,21 +65,7 @@
   
         bottom:0;
     }
-    .firs-row{
-    
-      
-        height: 100%;
-        margin-top:400px;
-        display: flex;
-
-        flex-direction: column;
-        flex:0 0 auto;
-        align-items: center;
-        max-width: 320px;
-        
-        margin-bottom: 60px;
-        
-    }
+   
     .firs-row > h2, p {
         text-align: center;
         margin:5px;

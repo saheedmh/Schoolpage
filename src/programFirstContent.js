@@ -29,7 +29,7 @@ Next call for Applications: to be announced</p>
         <h2>Who can apply?</h2>
         <p>We teach motivated refugees and newcomers with limited access to education or the labor market who want to start their career in web development. The course is open to anyone staying in Belgium. Women are strongly encouraged to apply!</p>
         </div>
-<div className="checkbox-div">
+<div className="c">
     <input type="checkbox" /> You’re +18 years old 
 <br /><br />
     <input type="checkbox"  /> You’re extremely motivated to start a career in web development. <br /><br />
@@ -62,7 +62,7 @@ Next call for Applications: to be announced</p>
                     <h1>But that's not it</h1>
                 </div>
             </div>
-           <div className="image-divs">
+           <div className="imagedivs">
             <img src="./images/finalproject.js.png" alt="" />
             </div>
             <button id='btnsid'>Read more</button>
