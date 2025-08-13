@@ -25,7 +25,7 @@ card{
 
 }
 @media (max-width:768px) {
-    .card{
+    .crd{
         display:grid;
         grid-template-columns: 1fr;
         margin-left: auto;

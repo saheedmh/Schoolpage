@@ -11,8 +11,9 @@ const Header = () => {
   });
 
   return (
+    <>
     <div className="header-container">
-      <div className="main-header">
+      <div className="header-content">
         <img src="./images/logo.png" alt="Logo" className="header-logo" />
 
         <button className="mobile-menu-icon" onClick={() => setShowMobileNav(!showMobileNav)}>
@@ -29,9 +30,9 @@ const Header = () => {
           <button className="btn">Apply Now</button>
         </div>
       </div>
-
+</div>
       {showMobileNav && (
-        <div className="nav-mobile">
+        <div className={`nav-mobile ${showMobileNav ? 'open' : ""}`}>
           <NavLink className="link" style={navLinkStyle} to="/">Home</NavLink>
           <NavLink className="link" style={navLinkStyle} to="/program">The Program</NavLink>
           <NavLink className="link" style={navLinkStyle} to="/about">About</NavLink>
@@ -41,7 +42,7 @@ const Header = () => {
           <button className="btn">Apply Now</button>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

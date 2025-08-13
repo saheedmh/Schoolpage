@@ -1,14 +1,14 @@
 
-.card-group{
+  .card-group{
     margin-top:50px;
     width: 100%;
     
 
 }
 .card{
-    max-width: 30%;
+    max-width: 400px;
     margin:10px auto;
-    height: 400px;
+    height: 100%;
     border:none;
     background-color:  #E1E9F6;
     box-shadow: 2px 8px 10px 2px rgba(0, 0,0, 0.4);
@@ -29,17 +29,15 @@
 }
 
 
-@media only screen and (max-width:768px) {
+@media only screen and  (min-width:320px) and (max-width:768px) {
     .card-group{
-        position: relative;
-        display: flex;
-        flex-direction: column;
         
-        width: 100%;
+        flex-direction: column;
+        min-width: 100%;
     }
     .card{
         display: flex;
-    flex-wrap: nowrap;
+    
     margin-left: auto;  
 
     }

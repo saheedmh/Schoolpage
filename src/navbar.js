@@ -31,8 +31,9 @@ const Header = () => {
       </div>
 
       {/* Mobile nav that pushes content down */}
+
       {isMobile && (
-        <nav className="nav-mobile">
+        <nav className="nav-mobile ">
           <NavLink className="link" style={navLinkStyle} to="/">Home</NavLink>
           <NavLink className="link" style={navLinkStyle} to="/program">The Program</NavLink>
           <NavLink className="link" style={navLinkStyle} to="/about">About</NavLink>

@@ -5,7 +5,7 @@ const Teamcomponent = () => {
     return ( 
         <div className="team-group ">
         <h1 className="heading  ">our team</h1>
-        <div className="card-group " id='groupss'>
+        <div className="card-group" id='groupss'>
         <div className="card">
           <img src="./images/team1.png" className="card-img-top" alt="..." />
           <div className="card-body">

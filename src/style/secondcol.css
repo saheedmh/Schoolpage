@@ -7,10 +7,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+.firsts-row > h1{
+    text-align: center;
+}
 .firsts-row{
-    display: flex;
+    dispay: flex;
     background-color: #F3EEEE;
-    max-width:440px;
+    min-width:440px;
     
     text-align: justify;
     padding: 10px;
@@ -28,8 +31,6 @@
 }
 .firsts-row > p{
     min-width: 350px;
-    
-    
     line-height: 25px;
     
 }
