@@ -2,7 +2,7 @@ import './style/footer.css'
 
 const Footer = () => {
     return (  
-        <footer className='footer'>
+        <Footer className='footer'>
         <div className="footer-text">
             <h1>Hack Your Future (part of Open Knowledge Belgium)</h1>
             <p>Open Knowledge Belgium vzw
@@ -14,7 +14,7 @@ contact@hackyourfuture.be
         <div className="social-icon">
             
             </div>
-           </footer>
+           </Footer>
     );
 }
  

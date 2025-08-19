@@ -30,17 +30,19 @@ const handleUpdate = ()=>{
 }
   return (
     <div className='crud' style={{marginBottom:"50px"}}>
-<h1>insert, update and Delete</h1>
+<h1>create , read, update and Delete</h1>
+<div>
       <input type="text"  value={ name} onChange={(e) => setName(e.target.value)} />
     {!show?<button onClick={handleAdd}>add</button>:
     <button onClick={handleUpdate}>update</button>}
-    
+    </div>
     {allData.map((val, i)=>{
-       return( <div>
-  <h1 style={{backgroundColor:"#f3f3f3", display:"flex", justifyContent:"space-around"}}>{val}
+       return( 
+       <div>
+  <p style={{backgroundColor:"#f3f3f3", display:"flex", justifyContent:"space-around"}}>{val}
   <button className='edit' style={{border:"none"}} onClick={() =>handleEdit(i)}>Edit</button>
   <button className='delete' onClick={()=> handledelete(i)}>Delete</button>
-  </h1>
+  </p>
 
         </div>
        )
