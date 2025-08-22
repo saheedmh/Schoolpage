@@ -43,6 +43,9 @@ function App() {
     <BrowserRouter>
     <div className="app">
     <Header/>
+    
+    
+
    {/**<Booklist/>
     {elementJoke}
     <ArrayOfObject/>
@@ -53,23 +56,29 @@ function App() {
     <ObjectContact/>
     */}  {/**{Cards}**/}
       <Routes>
+       
       
+       
       <Route path='/' element={<Home/>}></Route>
-
-      <Route path='program' element={<Program/>}></Route>
-      <Route path='about' element={<About/>}>
-      </Route>
-      <Route path='Crud' element={ <Crud/>}>
+ <Route path='program' element={<Program/>}></Route>
+        
+        
+     <Route path='Crud' element={ <Crud/>}>
       </Route>
       
     
       <Route path='student' element={<Student/>}></Route>
       <Route path='support' element={<Support/>}></Route>
-      {/*<Route path='signpage' element={<Signuppage/>}></Route>*/}
+      
+      <Route path='loginpage' element={<Loginpage/>}></Route>
+       <Route path='about' element={<About/>}>
+      </Route>
+ 
+      
        
     
       
-       <Route path='loginpage' element={<Loginpage/>}></Route>
+       
        
       </Routes>
       

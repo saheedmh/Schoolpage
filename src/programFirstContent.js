@@ -3,7 +3,7 @@ const ProgramFirstContent = () => {
     return ( 
         <div className="program-first-content">
             <div className="firstprogram-content ">
-             <div className=''>
+             <div className='program-content'>
                 <h1 className='program-heading-one'>Start your new career today!</h1>
                 
              <p>HackYourFuture is a free 9-month front end web development program for newcomers passionate about code and web development. You don’t need any technical background to start, only loads of motivation.</p>
@@ -20,7 +20,10 @@ Next call for Applications: to be announced</p>
 
 <button style={{padding:"10px", border:"none", marginLeft:"200px", backgroundColor:"#23efef", color:'#ffff'}}>apply</button>
 </div>
-                <img src="./images/program-image.png" alt=""  />
+<div className="program-img">
+    <img src="./images/program-image.png" alt=""  />
+</div>
+                
             </div>
        
        
@@ -29,7 +32,7 @@ Next call for Applications: to be announced</p>
         <h2>Who can apply?</h2>
         <p>We teach motivated refugees and newcomers with limited access to education or the labor market who want to start their career in web development. The course is open to anyone staying in Belgium. Women are strongly encouraged to apply!</p>
         </div>
-<div className="c">
+<div className="checkbox-content">
     <input type="checkbox" /> You’re +18 years old 
 <br /><br />
     <input type="checkbox"  /> You’re extremely motivated to start a career in web development. <br /><br />

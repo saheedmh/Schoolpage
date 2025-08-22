@@ -22,6 +22,8 @@
 .header-logo {
   width: 100px;
   height: auto;
+  color: white;
+  background-color: white;
 }
 
 .nav-desktop {
@@ -59,7 +61,13 @@
   flex-direction: column;
   background-color: #0d1117;
   padding: 1rem 0;
-  width: 40%;
+  max-width: 40%;
+  position:absolute;
+  margin-left: auto;
+  transition:left 0.5s ease;
+  position:relative;
+  transform:translateX(auto)
+
 }
  
   /*
@@ -102,7 +110,8 @@
   .nav-mobile .link {
     border-bottom: 1px solid #1f75fe;
     text-align: center;
-    margin-left: 70px;
+    
+    width: 100%;
   }
 
   .btn {

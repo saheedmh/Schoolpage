@@ -1,6 +1,6 @@
 .firstprogram-content{
     display: grid;
-    grid-template-columns: repeat( 2, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
    
    align-items: center;
    gap:10px;
@@ -8,10 +8,6 @@
    margin-left:auto;
    margin-right: auto;
    margin-bottom: 30px;
-}
-.firstprogram-content > img{
-    width:500px;
-    height: 300px;
 }
 .program-heading-one{
     
@@ -30,7 +26,7 @@
     justify-content: space-between;
     margin-top:20px;
 }
-  .para{
+  .program-content{
     max-width: 500px;
     line-height: 24px;
     padding: 10px;
@@ -39,6 +35,11 @@
     position:static;
     display: flex;
     flex-direction: column;
+}
+ .program-img >  img{
+    max-width: 400px;
+    height: 300px;
+    
 }
 .prgrm-second-col >button{
     background-color:#4A8CBB ;
@@ -215,13 +216,13 @@ color:#4A8CBB;
         
         
     }
-    .firstprogram-content > img{
-        margin-top:20px;
-        max-width: 330px;
-        display: flex;
-        margin-left:auto;
-        margin-right:auto;
-    }
+     .program-img >  img{
+
+     min-width: 320px;
+    height: 300px;
+    
+}
+    
     .prgrm-second-col{
         
         display: flex;
@@ -229,11 +230,11 @@ color:#4A8CBB;
         align-items: center;
        
     }
-    .para{
+    .program-content{
         display:flex;
-        max-width: 300px;
+        min-width: 300px;
         margin-top:10px;
-        grid-gap:5px;
+        gap:5px;
         align-items:center;
         margin-right: 40px;
     }
@@ -358,15 +359,22 @@ color:#4A8CBB;
         display: grid;
         
        }
+       .checkbox-content{
+        width:320px ;
+        margin-left: auto;
+        margin-right: auto;
+    
+       }
        .fifth-row {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        min-width: 100%;
+        margin-right: 50px;
        } 
        .rows-text{
         display: flex;
         flex-direction: column;
-        width:425px;
+        min-width:90%;
         
         align-items: center;
         
@@ -383,14 +391,19 @@ color:#4A8CBB;
         
        }
        .rows-image {
-        min-width: 100%;
+        width: 100%;
         display: grid;
+   
 
        }
+       
        .rows-image > img{
         max-width: 320px;
-        margin-left:auto;
-        margin-right:auto;
+        margin-right: 40px;
+        place-items: center;
+        place-content: center;
+        display: block;
+    
        }
        .rows-text > :nth-child(2){
         line-height: 25px;

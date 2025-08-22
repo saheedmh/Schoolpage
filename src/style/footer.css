@@ -1,4 +1,4 @@
-.footer{
+/**.footer{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -102,3 +102,4 @@ footer > .social-icon{
         height: 100vh;
     }
 }
+    **/

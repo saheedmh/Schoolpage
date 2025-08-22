@@ -8,12 +8,15 @@ const Header = () => {
   const navLinkStyle = ({ isActive }) => ({
     fontWeight: isActive ? 'bold' : 'normal',
     textDecoration: isActive ? 'underline' : 'none',
+    lineHeight:isActive? "1.4rem": "none",
+    width:isActive?"100%" : "none",
+    borderBottom:isActive ? "2px solid yellow": "none"
   });
 
   return (
     <header>
       <div className="main-header">
-        <img src="./images/logo.png" alt="Logo" className="header-logo" />
+        <img src="./images/logo.png" alt="Logo" className="header-logo" style={{backgundColor:"white"}}/>
 
         <nav className="nav-desktop">
           <NavLink className="link" style={navLinkStyle} to="/">Home</NavLink>
